@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript Calculator</title>
+
+
+	
+	<!-- For styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+	
+<body>
+	
+
+	<table id="calcu">
+		<tr>
+			<td colspan="4"><input  autofocus type="text"  id="result"></td>
+
+		</tr>
+		<tr>
+			<td><input class="bg-btn1" type="button" value="c" onclick="clr()" /> </td>
+            <td><input class="bg-btn1" type="button" value = '←' onclick ="Back()"> </td>
+			<td><input class="bg-btn1" type="button" value="%" onclick="dis('%')"
+                        onkeydown="myFunction(event)"> </td>
+			<td ><input class="bg-btn" type="button" value="÷" onclick="dis('/')"
+		        		onkeydown="myFunction(event)"> </td>
+		</tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="2" onclick="dis('2')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="3" onclick="dis('3')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input class="bg-btn" type="button" value="×" onclick="dis('*')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+		<tr>
+			<td><input type="button" value="4" onclick="dis('4')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="5" onclick="dis('5')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="6" onclick="dis('6')"
+						onkeydown="myFunction(event)"> </td>
+            <td><input class="bg-btn" type="button" value="-" onclick="dis('-')"
+                        onkeydown="myFunction(event)"> </td>
+
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="dis('7')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="8" onclick="dis('8')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="9" onclick="dis('9')"
+						onkeydown="myFunction(event)"> </td>
+            <td><input class="bg-btn" type="button" value="+" onclick="dis('+')"
+                onkeydown="myFunction(event)"> </td>
+
+		</tr>
+		<tr>
+			<td><input type="button" value="00" onclick="dis('00')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="0" onclick="dis('0')"
+						onkeydown="myFunction(event)"> </td>
+			<td><input type="button" value="." onclick="dis('.')"
+				onkeydown="myFunction(event)"> </td>
+			
+			<!-- solve function call function solve to evaluate value -->
+			<td><input class="bg-btn" type="button" value="=" onclick="solve()"> </td>
+
+
+		</tr>
+	</table>
+
+
+
+
+
+
+<script src="math-Js/math.js"></script>
+<script src="math-Js/math.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
